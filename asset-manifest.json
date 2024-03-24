@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/goit-camp/static/css/main.929c2dc0.css",
+    "main.js": "/goit-camp/static/js/main.5867b1fb.js",
+    "static/js/741.8f44cd70.chunk.js": "/goit-camp/static/js/741.8f44cd70.chunk.js",
+    "static/js/55.dfae5790.chunk.js": "/goit-camp/static/js/55.dfae5790.chunk.js",
+    "static/js/733.f6fd0ce7.chunk.js": "/goit-camp/static/js/733.f6fd0ce7.chunk.js",
+    "static/js/667.eddb3a41.chunk.js": "/goit-camp/static/js/667.eddb3a41.chunk.js",
+    "static/media/camper.jpg": "/goit-camp/static/media/camper.c162191dc9be48f2c29b.jpg",
+    "static/media/sprite.svg": "/goit-camp/static/media/sprite.870047835135e08214912d9c769e4c95.svg",
+    "index.html": "/goit-camp/index.html",
+    "main.929c2dc0.css.map": "/goit-camp/static/css/main.929c2dc0.css.map",
+    "main.5867b1fb.js.map": "/goit-camp/static/js/main.5867b1fb.js.map",
+    "741.8f44cd70.chunk.js.map": "/goit-camp/static/js/741.8f44cd70.chunk.js.map",
+    "55.dfae5790.chunk.js.map": "/goit-camp/static/js/55.dfae5790.chunk.js.map",
+    "733.f6fd0ce7.chunk.js.map": "/goit-camp/static/js/733.f6fd0ce7.chunk.js.map",
+    "667.eddb3a41.chunk.js.map": "/goit-camp/static/js/667.eddb3a41.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.929c2dc0.css",
+    "static/js/main.5867b1fb.js"
+  ]
+}
