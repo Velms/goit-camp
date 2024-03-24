@@ -1,25 +1,29 @@
-import s from './App.module.css';
-import ContactList from './ContactList/ContactList';
-import ContactForm from './ContactForm';
-import Filter from './Filter';
+import { lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './Layout/Layout';
 
-export default function App() {
+const Home = lazy(() => import('pages/Home/Home'));
+const Campers = lazy(() => import('pages/Campers/Campers'));
+// const CamperDetails = lazy(() =>
+//   import('components/CamperDetails/CamperDetails')
+// );
+// const Features = lazy(() => import('./Features/Features'));
+// const Reviews = lazy(() => import('./Reviews/Reviews'));
+const Favorites = lazy(() => import('pages/Favorites/Favorites'));
+
+export const App = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-        fontSize: 18,
-        color: '#010101',
-      }}
-    >
-      <h1>Phonebook</h1>
-      <ContactForm />
-      <h2 className={s.titleContacts}>Contacts</h2>
-      <Filter />
-      <ContactList />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="catalog" element={<Campers />} />
+        {/* <Route path="catalog/:catalogId" element={<CamperDetails />}>
+          <Route path="features" element={<Features />} />
+          <Route path="reviews" element={<Reviews />} />
+        </Route> */}
+        <Route path="favorites" element={<Favorites />} />
+        <Route path="*" element={<Home />} />
+      </Route>
+    </Routes>
   );
-}
+};
